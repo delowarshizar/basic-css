@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin:0;
+}
+nav{
+    background-color: pink;
+    padding: 20px;
+}
+nav ul{
+   
+    display: flex;
+    gap:50px;
+    justify-content: end;
+}
+nav ul li{
+    
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    border: 2px solid green;
+    padding: 5px;
+    border-radius: 10px;
+    color: black;
+}
+nav ul li a:hover{
+    background-color: rgb(0, 236, 114);
+}
