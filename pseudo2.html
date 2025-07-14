@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo part 2</title>
+    <style>
+        h1::after{
+            content: '.pdf';
+        }
+        .first::first-letter{
+            font-size: 2em;
+            color: red;
+        }
+        ::selection{
+            background-color: red;
+        }
+        input::placeholder{
+            color: tomato;
+        }
+    </style>
+</head>
+<body>
+    <h1>Delowar Husain</h1>
+    <h1>Delowar Husain</h1>
+    <h1>Delowar Husain</h1>
+
+    <p class="first">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis reiciendis magnam enim, molestias illum obcaecati ipsam voluptas asperiores laboriosam accusantium quasi debitis quas eos, quam natus recusandae. Laboriosam, delectus sit.
+    </p>
+    <p class="first">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis reiciendis magnam enim, molestias illum obcaecati ipsam voluptas asperiores laboriosam accusantium quasi debitis quas eos, quam natus recusandae. Laboriosam, delectus sit.
+    </p>
+    <p class="first">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis reiciendis magnam enim, molestias illum obcaecati ipsam voluptas asperiores laboriosam accusantium quasi debitis quas eos, quam natus recusandae. Laboriosam, delectus sit.
+    </p>
+    <input type="text" placeholder="enter name">
+    
+</body>
+</html>
