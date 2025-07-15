@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid layout</title>
+    <style>
+        .header,
+        .nav,
+        .main,
+        .sidebar,
+        .advertising,
+        .footer {
+            background-color: bisque;
+            padding: 10px;
+            border: 2px solid tomato;
+            border-radius: 10px;
+
+        }
+
+        .header {
+            grid-area: header;
+        }
+
+        .nav {
+            grid-area: nav;
+        }
+
+        .main {
+            grid-area: main;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+        }
+
+        .advertising {
+            grid-area: advertising;
+        }
+
+        .footer {
+            grid-area: footer;
+        }
+
+        .container {
+            display: grid;
+            grid-template-areas:
+                "header header header header"
+                "nav main main sidebar"
+                "nav main main advertising"
+                " footer footer footer footer";
+            gap: 20px
+        }
+
+        @media screen and (max-width:576px) {
+            .container {
+                grid-template-areas:
+                    "header"
+                    "nav"
+                    "main"
+                    "sidebar"
+                    "advertising"
+                    " footer";
+            }
+
+        }
+    </style>
+</head>
+
+<body class="container">
+    <header class="header">
+        <h2>the header</h2>
+    </header>
+    <nav class="nav">
+        <ul>
+            <li><a href="">Nav1</a></li>
+            <li><a href="">Nav1</a></li>
+            <li><a href="">Nav1</a></li>
+        </ul>
+    </nav>
+    <main class="main">
+        <h2>Main article area</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia iusto exercitationem expedita dicta quasi
+            quo, totam iure et recusandae id labore nobis non sit odit accusamus doloremque dolorem animi. Veritatis.
+        </p>
+    </main>
+    <div class="sidebar">
+        sidebar
+    </div>
+    <div class="advertising">advertising</div>
+    <footer class="footer">
+        <h2>the footer</h2>
+    </footer>
+
+</body>
+
+</html>
