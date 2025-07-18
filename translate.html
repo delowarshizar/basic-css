@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>translate</title>
+    <style>
+        .container{
+            height: 200px;
+            width: 300px;
+            border: 2px solid red;
+            background-color: green;
+        }
+        .inner{
+            height: 200px;
+            width: 300px;
+            border: 1px solid black;
+            background-color: yellow;
+        }
+        .inner:hover{
+            transform: scale(0.5) translateX(20px) rotate(30deg);
+        }
+    </style>        
+</head>
+<body>
+    <div class="container">
+        <div class="inner">inner 1</div>
+    </div>
+    <div class="container">
+        <div class="inner">inner 2</div>
+    </div>
+    <div class="container">
+        <div class="inner">inner 3</div>
+    </div>
+</body>
+</html>
