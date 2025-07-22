@@ -33,3 +33,12 @@ div button:hover{
 .intro{
     align-items: center;
 }
+
+@media screen and (max-width: 600px) {
+    .hero-container, nav ul {
+        flex-direction: column;
+    }
+    .hero-container img{
+        width: 100%;;
+    }
+}
